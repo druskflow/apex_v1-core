@@ -28,4 +28,3 @@ import {
 This will ensure that you are testing against the same bytecode that us deployed to mainnet and public testnets, and all Uniswap code will correctly interoperate with your local deployment.
 
 ## Using solidity interfaces
-
