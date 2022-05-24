@@ -28,3 +28,17 @@ import {
 This will ensure that you are testing against the same bytecode that us deployed to mainnet and public testnets, and all Uniswap code will correctly interoperate with your local deployment.
 
 ## Using solidity interfaces
+
+The Uniswap v3 interfaces are available for import into solidity smart contracts
+via the npm artifact `@uniswap/v3-core`, e.g.:
+
+```solidity
+import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
+
+contract MyContract {
+  IUniswapV3Pool pool;
+
+  function doSomethingWithPool() {
+    // pool.swap(...);
+  }
+}
